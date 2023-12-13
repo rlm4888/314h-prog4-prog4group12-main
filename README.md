@@ -1,9 +1,25 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/nX2FRVY6)
-Name:
-EID:
-Email:
-Time:
-Slip days:
-Collaborators:
-Comments:
+## Overview
+
+This Tetris project implements a variant of the classic game, focusing on decomposing the problem, modular design, and emphasizing design principles. The game involves managing a 2D grid and various-shaped falling pieces with the goal of forming complete rows.
+
+## Game Rules
+
+- Tetris follows the Super Rotation System (SRS) for rotations and wall kicks.
+- Controls: A, S, D for left, down, and right movement; Q and E for counterclockwise and clockwise rotation; W to drop the piece.
+
+## Components
+
+1. **TetrisPiece Class:**
+   - Represents Tetris pieces.
+   - Defines body, bounding box, skirt, rotations, and implements SRS.
+   - Efficiently handles constant-time operations.
+
+2. **TetrisBoard Class:**
+   - Manages the game board and piece movements.
+   - Supports operations like adding pieces, falling, and row clearing.
+   - Ensures efficiency in accessing board information.
+
+3. **Brain:**
+   - Customizable AI strategy to determine optimal moves (TetrisBot).
+   - Implements the Brain interface, offering flexibility for different tactics.
 
